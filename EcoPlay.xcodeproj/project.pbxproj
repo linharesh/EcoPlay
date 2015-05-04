@@ -1,0 +1,517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B0D41C8B1AF7B21C00CE7246 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D41C8A1AF7B21C00CE7246 /* main.m */; };
+		B0D41C8E1AF7B21C00CE7246 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D41C8D1AF7B21C00CE7246 /* AppDelegate.m */; };
+		B0D41C911AF7B21C00CE7246 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D41C901AF7B21C00CE7246 /* HomeViewController.m */; };
+		B0D41C941AF7B21C00CE7246 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0D41C921AF7B21C00CE7246 /* Main.storyboard */; };
+		B0D41C961AF7B21C00CE7246 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0D41C951AF7B21C00CE7246 /* Images.xcassets */; };
+		B0D41C991AF7B21C00CE7246 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0D41C971AF7B21C00CE7246 /* LaunchScreen.xib */; };
+		B0D41CA51AF7B21C00CE7246 /* EcoPlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D41CA41AF7B21C00CE7246 /* EcoPlayTests.m */; };
+		B0D41CB81AF7B72200CE7246 /* homeBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D41CB71AF7B72200CE7246 /* homeBackground.png */; };
+		B0D41CBB1AF7C02700CE7246 /* sound-off.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D41CB91AF7C02700CE7246 /* sound-off.png */; };
+		B0D41CBC1AF7C02700CE7246 /* sound-on.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D41CBA1AF7C02700CE7246 /* sound-on.png */; };
+		B0D41CC61AF7C3B300CE7246 /* Game1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D41CC41AF7C3B300CE7246 /* Game1ViewController.m */; };
+		B0D41CC71AF7C3B300CE7246 /* Game1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0D41CC51AF7C3B300CE7246 /* Game1ViewController.xib */; };
+		B0D41CC91AF7C50300CE7246 /* quizBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D41CC81AF7C50300CE7246 /* quizBackground.png */; };
+		B0D41CCB1AF7CADA00CE7246 /* inicial 2.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D41CCA1AF7CADA00CE7246 /* inicial 2.png */; };
+		B0D41CCD1AF7CC4E00CE7246 /* ecoplay-devteam.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0D41CCC1AF7CC4E00CE7246 /* ecoplay-devteam.jpg */; };
+		B0D41CCF1AF7CF8800CE7246 /* backButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D41CCE1AF7CF8800CE7246 /* backButton.png */; };
+		B0D41CD11AF7D78100CE7246 /* developers.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D41CD01AF7D78100CE7246 /* developers.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B0D41C9F1AF7B21C00CE7246 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0D41C7D1AF7B21C00CE7246 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0D41C841AF7B21C00CE7246;
+			remoteInfo = EcoPlay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B0D41C851AF7B21C00CE7246 /* EcoPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0D41C891AF7B21C00CE7246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0D41C8A1AF7B21C00CE7246 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B0D41C8C1AF7B21C00CE7246 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B0D41C8D1AF7B21C00CE7246 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B0D41C8F1AF7B21C00CE7246 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		B0D41C901AF7B21C00CE7246 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		B0D41C931AF7B21C00CE7246 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B0D41C951AF7B21C00CE7246 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B0D41C981AF7B21C00CE7246 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B0D41C9E1AF7B21C00CE7246 /* EcoPlayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EcoPlayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0D41CA31AF7B21C00CE7246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0D41CA41AF7B21C00CE7246 /* EcoPlayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EcoPlayTests.m; sourceTree = "<group>"; };
+		B0D41CB71AF7B72200CE7246 /* homeBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homeBackground.png; sourceTree = "<group>"; };
+		B0D41CB91AF7C02700CE7246 /* sound-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sound-off.png"; sourceTree = "<group>"; };
+		B0D41CBA1AF7C02700CE7246 /* sound-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sound-on.png"; sourceTree = "<group>"; };
+		B0D41CC31AF7C3B300CE7246 /* Game1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game1ViewController.h; sourceTree = "<group>"; };
+		B0D41CC41AF7C3B300CE7246 /* Game1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game1ViewController.m; sourceTree = "<group>"; };
+		B0D41CC51AF7C3B300CE7246 /* Game1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Game1ViewController.xib; sourceTree = "<group>"; };
+		B0D41CC81AF7C50300CE7246 /* quizBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quizBackground.png; sourceTree = "<group>"; };
+		B0D41CCA1AF7CADA00CE7246 /* inicial 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inicial 2.png"; sourceTree = "<group>"; };
+		B0D41CCC1AF7CC4E00CE7246 /* ecoplay-devteam.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ecoplay-devteam.jpg"; sourceTree = "<group>"; };
+		B0D41CCE1AF7CF8800CE7246 /* backButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backButton.png; sourceTree = "<group>"; };
+		B0D41CD01AF7D78100CE7246 /* developers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = developers.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B0D41C821AF7B21C00CE7246 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0D41C9B1AF7B21C00CE7246 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B0D41C7C1AF7B21C00CE7246 = {
+			isa = PBXGroup;
+			children = (
+				B0D41C871AF7B21C00CE7246 /* EcoPlay */,
+				B0D41CA11AF7B21C00CE7246 /* EcoPlayTests */,
+				B0D41C861AF7B21C00CE7246 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B0D41C861AF7B21C00CE7246 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0D41C851AF7B21C00CE7246 /* EcoPlay.app */,
+				B0D41C9E1AF7B21C00CE7246 /* EcoPlayTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0D41C871AF7B21C00CE7246 /* EcoPlay */ = {
+			isa = PBXGroup;
+			children = (
+				B0D41CC21AF7C32300CE7246 /* Images */,
+				B0D41CB11AF7B28900CE7246 /* AppDelegate */,
+				B0D41CAE1AF7B24400CE7246 /* Model */,
+				B0D41CAF1AF7B25600CE7246 /* View */,
+				B0D41CB01AF7B26800CE7246 /* Controller */,
+				B0D41C951AF7B21C00CE7246 /* Images.xcassets */,
+				B0D41C881AF7B21C00CE7246 /* Supporting Files */,
+			);
+			path = EcoPlay;
+			sourceTree = "<group>";
+		};
+		B0D41C881AF7B21C00CE7246 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B0D41C891AF7B21C00CE7246 /* Info.plist */,
+				B0D41C8A1AF7B21C00CE7246 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B0D41CA11AF7B21C00CE7246 /* EcoPlayTests */ = {
+			isa = PBXGroup;
+			children = (
+				B0D41CA41AF7B21C00CE7246 /* EcoPlayTests.m */,
+				B0D41CA21AF7B21C00CE7246 /* Supporting Files */,
+			);
+			path = EcoPlayTests;
+			sourceTree = "<group>";
+		};
+		B0D41CA21AF7B21C00CE7246 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B0D41CA31AF7B21C00CE7246 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B0D41CAE1AF7B24400CE7246 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B0D41CAF1AF7B25600CE7246 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B0D41C971AF7B21C00CE7246 /* LaunchScreen.xib */,
+				B0D41C921AF7B21C00CE7246 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B0D41CB01AF7B26800CE7246 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B0D41C901AF7B21C00CE7246 /* HomeViewController.m */,
+				B0D41C8F1AF7B21C00CE7246 /* HomeViewController.h */,
+				B0D41CC31AF7C3B300CE7246 /* Game1ViewController.h */,
+				B0D41CC41AF7C3B300CE7246 /* Game1ViewController.m */,
+				B0D41CC51AF7C3B300CE7246 /* Game1ViewController.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B0D41CB11AF7B28900CE7246 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B0D41C8C1AF7B21C00CE7246 /* AppDelegate.h */,
+				B0D41C8D1AF7B21C00CE7246 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		B0D41CC21AF7C32300CE7246 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B0D41CCA1AF7CADA00CE7246 /* inicial 2.png */,
+				B0D41CC81AF7C50300CE7246 /* quizBackground.png */,
+				B0D41CCE1AF7CF8800CE7246 /* backButton.png */,
+				B0D41CB91AF7C02700CE7246 /* sound-off.png */,
+				B0D41CD01AF7D78100CE7246 /* developers.png */,
+				B0D41CCC1AF7CC4E00CE7246 /* ecoplay-devteam.jpg */,
+				B0D41CBA1AF7C02700CE7246 /* sound-on.png */,
+				B0D41CB71AF7B72200CE7246 /* homeBackground.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B0D41C841AF7B21C00CE7246 /* EcoPlay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0D41CA81AF7B21C00CE7246 /* Build configuration list for PBXNativeTarget "EcoPlay" */;
+			buildPhases = (
+				B0D41C811AF7B21C00CE7246 /* Sources */,
+				B0D41C821AF7B21C00CE7246 /* Frameworks */,
+				B0D41C831AF7B21C00CE7246 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EcoPlay;
+			productName = EcoPlay;
+			productReference = B0D41C851AF7B21C00CE7246 /* EcoPlay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B0D41C9D1AF7B21C00CE7246 /* EcoPlayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0D41CAB1AF7B21C00CE7246 /* Build configuration list for PBXNativeTarget "EcoPlayTests" */;
+			buildPhases = (
+				B0D41C9A1AF7B21C00CE7246 /* Sources */,
+				B0D41C9B1AF7B21C00CE7246 /* Frameworks */,
+				B0D41C9C1AF7B21C00CE7246 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0D41CA01AF7B21C00CE7246 /* PBXTargetDependency */,
+			);
+			name = EcoPlayTests;
+			productName = EcoPlayTests;
+			productReference = B0D41C9E1AF7B21C00CE7246 /* EcoPlayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B0D41C7D1AF7B21C00CE7246 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Henrique do Prado Linhares";
+				TargetAttributes = {
+					B0D41C841AF7B21C00CE7246 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					B0D41C9D1AF7B21C00CE7246 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = B0D41C841AF7B21C00CE7246;
+					};
+				};
+			};
+			buildConfigurationList = B0D41C801AF7B21C00CE7246 /* Build configuration list for PBXProject "EcoPlay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B0D41C7C1AF7B21C00CE7246;
+			productRefGroup = B0D41C861AF7B21C00CE7246 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0D41C841AF7B21C00CE7246 /* EcoPlay */,
+				B0D41C9D1AF7B21C00CE7246 /* EcoPlayTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B0D41C831AF7B21C00CE7246 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0D41C941AF7B21C00CE7246 /* Main.storyboard in Resources */,
+				B0D41CCB1AF7CADA00CE7246 /* inicial 2.png in Resources */,
+				B0D41CCF1AF7CF8800CE7246 /* backButton.png in Resources */,
+				B0D41C991AF7B21C00CE7246 /* LaunchScreen.xib in Resources */,
+				B0D41CBC1AF7C02700CE7246 /* sound-on.png in Resources */,
+				B0D41CC71AF7C3B300CE7246 /* Game1ViewController.xib in Resources */,
+				B0D41CBB1AF7C02700CE7246 /* sound-off.png in Resources */,
+				B0D41CCD1AF7CC4E00CE7246 /* ecoplay-devteam.jpg in Resources */,
+				B0D41CB81AF7B72200CE7246 /* homeBackground.png in Resources */,
+				B0D41CC91AF7C50300CE7246 /* quizBackground.png in Resources */,
+				B0D41CD11AF7D78100CE7246 /* developers.png in Resources */,
+				B0D41C961AF7B21C00CE7246 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0D41C9C1AF7B21C00CE7246 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B0D41C811AF7B21C00CE7246 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0D41C911AF7B21C00CE7246 /* HomeViewController.m in Sources */,
+				B0D41C8E1AF7B21C00CE7246 /* AppDelegate.m in Sources */,
+				B0D41CC61AF7C3B300CE7246 /* Game1ViewController.m in Sources */,
+				B0D41C8B1AF7B21C00CE7246 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0D41C9A1AF7B21C00CE7246 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0D41CA51AF7B21C00CE7246 /* EcoPlayTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B0D41CA01AF7B21C00CE7246 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0D41C841AF7B21C00CE7246 /* EcoPlay */;
+			targetProxy = B0D41C9F1AF7B21C00CE7246 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B0D41C921AF7B21C00CE7246 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0D41C931AF7B21C00CE7246 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B0D41C971AF7B21C00CE7246 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0D41C981AF7B21C00CE7246 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B0D41CA61AF7B21C00CE7246 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B0D41CA71AF7B21C00CE7246 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B0D41CA91AF7B21C00CE7246 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EcoPlay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		B0D41CAA1AF7B21C00CE7246 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EcoPlay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		B0D41CAC1AF7B21C00CE7246 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EcoPlayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EcoPlay.app/EcoPlay";
+			};
+			name = Debug;
+		};
+		B0D41CAD1AF7B21C00CE7246 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EcoPlayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EcoPlay.app/EcoPlay";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B0D41C801AF7B21C00CE7246 /* Build configuration list for PBXProject "EcoPlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0D41CA61AF7B21C00CE7246 /* Debug */,
+				B0D41CA71AF7B21C00CE7246 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0D41CA81AF7B21C00CE7246 /* Build configuration list for PBXNativeTarget "EcoPlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0D41CA91AF7B21C00CE7246 /* Debug */,
+				B0D41CAA1AF7B21C00CE7246 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B0D41CAB1AF7B21C00CE7246 /* Build configuration list for PBXNativeTarget "EcoPlayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0D41CAC1AF7B21C00CE7246 /* Debug */,
+				B0D41CAD1AF7B21C00CE7246 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B0D41C7D1AF7B21C00CE7246 /* Project object */;
+}

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Game1ViewController">
+            <connections>
+                <outlet property="BG" destination="nTh-pE-RvS" id="qOu-N2-RM3"/>
+                <outlet property="NextGame" destination="axv-vq-Fz1" id="Gb8-mF-8aa"/>
+                <outlet property="background_image" destination="D27-vp-zeO" id="Veo-gN-Bc5"/>
+                <outlet property="button_A" destination="vgm-f9-Mlf" id="gMD-Z7-gvl"/>
+                <outlet property="button_B" destination="QPm-w8-TFu" id="B2N-6b-46i"/>
+                <outlet property="button_C" destination="JVU-6b-ro5" id="bcv-lh-CJO"/>
+                <outlet property="button_D" destination="lwb-kZ-hDN" id="D6E-a0-DMi"/>
+                <outlet property="goback" destination="l3r-Qh-wZp" id="NRq-aE-mI0"/>
+                <outlet property="goback_image" destination="9jb-D6-Agi" id="6dl-8f-qfU"/>
+                <outlet property="question" destination="fTc-ka-SN0" id="UAt-mI-xwS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="yourPoints" destination="vBu-gW-0Lv" id="Hz0-JR-c6g"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D27-vp-zeO">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                        <rect key="frame" x="-155" y="0.0" width="1179" height="800"/>
+                    </variation>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ajude a limpar a praia!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWT-Sw-bEN">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="widthClass=regular" fixedFrame="YES">
+                        <rect key="frame" x="-100" y="-55" width="197" height="21"/>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ajude a limpar a praia!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EP9-MY-9UB">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="widthClass=regular" fixedFrame="YES">
+                        <rect key="frame" x="-100" y="-55" width="197" height="21"/>
+                    </variation>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nTh-pE-RvS">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <variation key="widthClass=regular" fixedFrame="YES">
+                        <rect key="frame" x="0.0" y="-7" width="1024" height="768"/>
+                    </variation>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgm-f9-Mlf">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="21"/>
+                    <state key="normal" title="Botão A">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="widthClass=regular" fixedFrame="YES">
+                        <rect key="frame" x="273" y="201" width="254" height="30"/>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                        <rect key="frame" x="346" y="259" width="325" height="64"/>
+                    </variation>
+                    <connections>
+                        <action selector="button_A:" destination="-1" eventType="touchUpInside" id="LV8-wM-F8j"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JVU-6b-ro5">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="21"/>
+                    <state key="normal" title="Botão C">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="widthClass=regular" fixedFrame="YES">
+                        <rect key="frame" x="238" y="308" width="325" height="30"/>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                        <rect key="frame" x="350" y="434" width="325" height="61"/>
+                    </variation>
+                    <connections>
+                        <action selector="button_C:" destination="-1" eventType="touchUpInside" id="SUe-M5-yw3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwb-kZ-hDN">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="21"/>
+                    <state key="normal" title="Botão D">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="widthClass=regular" fixedFrame="YES">
+                        <rect key="frame" x="275" y="363" width="250" height="30"/>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                        <rect key="frame" x="350" y="540" width="325" height="58"/>
+                    </variation>
+                    <connections>
+                        <action selector="button_D:" destination="-1" eventType="touchUpInside" id="yuj-sf-es1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPm-w8-TFu">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="21"/>
+                    <state key="normal" title="Botão B">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="widthClass=regular" fixedFrame="YES">
+                        <rect key="frame" x="257" y="253" width="286" height="30"/>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                        <rect key="frame" x="346" y="350" width="325" height="57"/>
+                    </variation>
+                    <connections>
+                        <action selector="button_B:" destination="-1" eventType="touchUpInside" id="IgZ-h0-mJg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3r-Qh-wZp">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                        <rect key="frame" x="51" y="52" width="76" height="73"/>
+                    </variation>
+                    <connections>
+                        <action selector="goback:" destination="-1" eventType="touchUpInside" id="4sk-OI-t1W"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axv-vq-Fz1">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="26"/>
+                    <state key="normal" title="Next question">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="widthClass=regular" fixedFrame="YES">
+                        <rect key="frame" x="638" y="42" width="96" height="30"/>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                        <rect key="frame" x="51" y="350" width="220" height="45"/>
+                    </variation>
+                    <connections>
+                        <action selector="NextGame:" destination="-1" eventType="touchUpInside" id="2u4-dt-GFm"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9jb-D6-Agi">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                        <rect key="frame" x="51" y="69" width="76" height="73"/>
+                    </variation>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Points" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vBu-gW-0Lv">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="26"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="widthClass=regular" fixedFrame="YES">
+                        <rect key="frame" x="43" y="131" width="146" height="21"/>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                        <rect key="frame" x="51" y="239" width="304" height="57"/>
+                    </variation>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="PERGUNTA" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fTc-ka-SN0">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="35"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <variation key="widthClass=regular" fixedFrame="YES">
+                        <rect key="frame" x="280" y="100" width="240" height="68"/>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                        <rect key="frame" x="225" y="25" width="574" height="206"/>
+                    </variation>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="0.60821166562885498" green="1" blue="0.95967513883664579" alpha="1" colorSpace="calibratedRGB"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="D27-vp-zeO"/>
+                    <exclude reference="hWT-Sw-bEN"/>
+                    <exclude reference="EP9-MY-9UB"/>
+                    <exclude reference="nTh-pE-RvS"/>
+                    <exclude reference="vgm-f9-Mlf"/>
+                    <exclude reference="JVU-6b-ro5"/>
+                    <exclude reference="lwb-kZ-hDN"/>
+                    <exclude reference="QPm-w8-TFu"/>
+                    <exclude reference="l3r-Qh-wZp"/>
+                    <exclude reference="axv-vq-Fz1"/>
+                    <exclude reference="9jb-D6-Agi"/>
+                    <exclude reference="vBu-gW-0Lv"/>
+                    <exclude reference="fTc-ka-SN0"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=regular">
+                <mask key="subviews">
+                    <include reference="hWT-Sw-bEN"/>
+                    <include reference="EP9-MY-9UB"/>
+                    <include reference="nTh-pE-RvS"/>
+                    <include reference="vgm-f9-Mlf"/>
+                    <include reference="JVU-6b-ro5"/>
+                    <include reference="lwb-kZ-hDN"/>
+                    <include reference="QPm-w8-TFu"/>
+                    <include reference="axv-vq-Fz1"/>
+                    <include reference="vBu-gW-0Lv"/>
+                    <include reference="fTc-ka-SN0"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=regular">
+                <mask key="subviews">
+                    <include reference="D27-vp-zeO"/>
+                    <include reference="l3r-Qh-wZp"/>
+                    <include reference="9jb-D6-Agi"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
