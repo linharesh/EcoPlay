@@ -78,7 +78,7 @@ Arquivo principal (.m) do jogo EcoQuiz
     
     
     //Gera número random de 0 até 9, ou seja, escolhe qual a pergunta será feira
-    self.random = arc4random_uniform(10);
+    self.random = arc4random_uniform(21);
     
     switch (self.random)
     {
