@@ -43,7 +43,7 @@
     
     
     UIGraphicsBeginImageContext(self.view.frame.size);
-    [[UIImage imageNamed:@"inicial 2.png"] drawInRect:self.view.bounds];
+    [[UIImage imageNamed:@"inicial.png"] drawInRect:self.view.bounds];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     

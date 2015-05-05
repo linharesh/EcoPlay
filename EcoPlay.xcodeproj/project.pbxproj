@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4583166F1AF95A520038080E /* GameMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4583166E1AF95A520038080E /* GameMusic.mp3 */; };
+		458316711AF95AE80038080E /* inicial.png in Resources */ = {isa = PBXBuildFile; fileRef = 458316701AF95AE80038080E /* inicial.png */; };
+		458316731AF95AFF0038080E /* developers.png in Resources */ = {isa = PBXBuildFile; fileRef = 458316721AF95AFF0038080E /* developers.png */; };
 		B0D41C8B1AF7B21C00CE7246 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D41C8A1AF7B21C00CE7246 /* main.m */; };
 		B0D41C8E1AF7B21C00CE7246 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D41C8D1AF7B21C00CE7246 /* AppDelegate.m */; };
 		B0D41C911AF7B21C00CE7246 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D41C901AF7B21C00CE7246 /* HomeViewController.m */; };
@@ -14,16 +17,12 @@
 		B0D41C961AF7B21C00CE7246 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0D41C951AF7B21C00CE7246 /* Images.xcassets */; };
 		B0D41C991AF7B21C00CE7246 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0D41C971AF7B21C00CE7246 /* LaunchScreen.xib */; };
 		B0D41CA51AF7B21C00CE7246 /* EcoPlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D41CA41AF7B21C00CE7246 /* EcoPlayTests.m */; };
-		B0D41CB81AF7B72200CE7246 /* homeBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D41CB71AF7B72200CE7246 /* homeBackground.png */; };
 		B0D41CBB1AF7C02700CE7246 /* sound-off.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D41CB91AF7C02700CE7246 /* sound-off.png */; };
 		B0D41CBC1AF7C02700CE7246 /* sound-on.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D41CBA1AF7C02700CE7246 /* sound-on.png */; };
 		B0D41CC61AF7C3B300CE7246 /* Game1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D41CC41AF7C3B300CE7246 /* Game1ViewController.m */; };
 		B0D41CC71AF7C3B300CE7246 /* Game1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0D41CC51AF7C3B300CE7246 /* Game1ViewController.xib */; };
 		B0D41CC91AF7C50300CE7246 /* quizBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D41CC81AF7C50300CE7246 /* quizBackground.png */; };
-		B0D41CCB1AF7CADA00CE7246 /* inicial 2.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D41CCA1AF7CADA00CE7246 /* inicial 2.png */; };
-		B0D41CCD1AF7CC4E00CE7246 /* ecoplay-devteam.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0D41CCC1AF7CC4E00CE7246 /* ecoplay-devteam.jpg */; };
 		B0D41CCF1AF7CF8800CE7246 /* backButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D41CCE1AF7CF8800CE7246 /* backButton.png */; };
-		B0D41CD11AF7D78100CE7246 /* developers.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D41CD01AF7D78100CE7246 /* developers.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4583166E1AF95A520038080E /* GameMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = GameMusic.mp3; sourceTree = "<group>"; };
+		458316701AF95AE80038080E /* inicial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inicial.png; sourceTree = "<group>"; };
+		458316721AF95AFF0038080E /* developers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = developers.png; sourceTree = "<group>"; };
 		B0D41C851AF7B21C00CE7246 /* EcoPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D41C891AF7B21C00CE7246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0D41C8A1AF7B21C00CE7246 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -50,17 +52,13 @@
 		B0D41C9E1AF7B21C00CE7246 /* EcoPlayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EcoPlayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D41CA31AF7B21C00CE7246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0D41CA41AF7B21C00CE7246 /* EcoPlayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EcoPlayTests.m; sourceTree = "<group>"; };
-		B0D41CB71AF7B72200CE7246 /* homeBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homeBackground.png; sourceTree = "<group>"; };
 		B0D41CB91AF7C02700CE7246 /* sound-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sound-off.png"; sourceTree = "<group>"; };
 		B0D41CBA1AF7C02700CE7246 /* sound-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sound-on.png"; sourceTree = "<group>"; };
 		B0D41CC31AF7C3B300CE7246 /* Game1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game1ViewController.h; sourceTree = "<group>"; };
 		B0D41CC41AF7C3B300CE7246 /* Game1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game1ViewController.m; sourceTree = "<group>"; };
 		B0D41CC51AF7C3B300CE7246 /* Game1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Game1ViewController.xib; sourceTree = "<group>"; };
 		B0D41CC81AF7C50300CE7246 /* quizBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quizBackground.png; sourceTree = "<group>"; };
-		B0D41CCA1AF7CADA00CE7246 /* inicial 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inicial 2.png"; sourceTree = "<group>"; };
-		B0D41CCC1AF7CC4E00CE7246 /* ecoplay-devteam.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ecoplay-devteam.jpg"; sourceTree = "<group>"; };
 		B0D41CCE1AF7CF8800CE7246 /* backButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backButton.png; sourceTree = "<group>"; };
-		B0D41CD01AF7D78100CE7246 /* developers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = developers.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,14 +177,13 @@
 		B0D41CC21AF7C32300CE7246 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				B0D41CCA1AF7CADA00CE7246 /* inicial 2.png */,
 				B0D41CC81AF7C50300CE7246 /* quizBackground.png */,
 				B0D41CCE1AF7CF8800CE7246 /* backButton.png */,
 				B0D41CB91AF7C02700CE7246 /* sound-off.png */,
-				B0D41CD01AF7D78100CE7246 /* developers.png */,
-				B0D41CCC1AF7CC4E00CE7246 /* ecoplay-devteam.jpg */,
+				458316701AF95AE80038080E /* inicial.png */,
+				458316721AF95AFF0038080E /* developers.png */,
 				B0D41CBA1AF7C02700CE7246 /* sound-on.png */,
-				B0D41CB71AF7B72200CE7246 /* homeBackground.png */,
+				4583166E1AF95A520038080E /* GameMusic.mp3 */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -272,16 +269,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0D41C941AF7B21C00CE7246 /* Main.storyboard in Resources */,
-				B0D41CCB1AF7CADA00CE7246 /* inicial 2.png in Resources */,
+				458316731AF95AFF0038080E /* developers.png in Resources */,
 				B0D41CCF1AF7CF8800CE7246 /* backButton.png in Resources */,
+				4583166F1AF95A520038080E /* GameMusic.mp3 in Resources */,
+				458316711AF95AE80038080E /* inicial.png in Resources */,
 				B0D41C991AF7B21C00CE7246 /* LaunchScreen.xib in Resources */,
 				B0D41CBC1AF7C02700CE7246 /* sound-on.png in Resources */,
 				B0D41CC71AF7C3B300CE7246 /* Game1ViewController.xib in Resources */,
 				B0D41CBB1AF7C02700CE7246 /* sound-off.png in Resources */,
-				B0D41CCD1AF7CC4E00CE7246 /* ecoplay-devteam.jpg in Resources */,
-				B0D41CB81AF7B72200CE7246 /* homeBackground.png in Resources */,
 				B0D41CC91AF7C50300CE7246 /* quizBackground.png in Resources */,
-				B0D41CD11AF7D78100CE7246 /* developers.png in Resources */,
 				B0D41C961AF7B21C00CE7246 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,6 +498,7 @@
 				B0D41CAA1AF7B21C00CE7246 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0D41CAB1AF7B21C00CE7246 /* Build configuration list for PBXNativeTarget "EcoPlayTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +507,7 @@
 				B0D41CAD1AF7B21C00CE7246 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
