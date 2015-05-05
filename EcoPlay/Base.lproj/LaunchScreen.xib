@@ -17,10 +17,10 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EcoPlayIcon" translatesAutoresizingMaskIntoConstraints="NO" id="d6u-8E-YFd">
-                    <rect key="frame" x="180" y="163" width="120" height="155"/>
+                    <rect key="frame" x="125" y="90" width="230" height="300"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="120" id="HB8-Rn-q9z"/>
-                        <constraint firstAttribute="height" constant="155" id="Tbw-f1-Jm6"/>
+                        <constraint firstAttribute="width" constant="230" id="HB8-Rn-q9z"/>
+                        <constraint firstAttribute="height" constant="300" id="Tbw-f1-Jm6"/>
                     </constraints>
                 </imageView>
             </subviews>

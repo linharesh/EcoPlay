@@ -15,7 +15,11 @@
 
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface Game1ViewController : UIViewController
+@interface Game1ViewController : UIViewController <AVAudioPlayerDelegate>{
+    AVAudioPlayer *sound;
+    NSURL *soundFile;
+}
 
 @end

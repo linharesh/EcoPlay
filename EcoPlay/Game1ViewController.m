@@ -37,8 +37,12 @@ Arquivo principal (.m) do jogo EcoQuiz
 @property int points;
 @property BOOL Corrected;
 @property int random;
+@property int lastRandom;
 @property BOOL soundIsOn;
 
+@property (weak, nonatomic) IBOutlet UIImageView *soundButtonImage;
+
+@property (weak, nonatomic) IBOutlet UIButton *soundbutton;
 
 
 @end
@@ -50,7 +54,24 @@ Arquivo principal (.m) do jogo EcoQuiz
  Método que retorna o usuário para a tela inicial
  É acionado pelo botão goback
  */
+- (IBAction)soundButton:(id)sender {
+    if (![sound isPlaying]) {
+        [sound play];
+        [_soundbutton setImage:[UIImage imageNamed:@"sound-on"]forState:UIControlStateNormal] ;
+    }
+    else {
+        [sound pause];
+        [_soundbutton setImage:[UIImage imageNamed:@"sound-off"]forState:UIControlStateNormal] ;
+    }
+
+}
+
+
+
+
 - (IBAction)goback:(id)sender {
+    
+    [sound pause];
     
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     
@@ -77,10 +98,18 @@ Arquivo principal (.m) do jogo EcoQuiz
     self.Corrected=false;
     
     
-    //Gera número random de 0 até 21, ou seja, escolhe qual a pergunta será feira
+    //Atribuiu para a variavel lastRandom o valor do ultimo numero random
+    self.lastRandom = self.random;
+    
+    
+    //Gera número random de 0 até 21, ou seja, escolhe qual a pergunta será feita
     self.random = arc4random_uniform(21);
     
-    NSLog(@"%d",self.random);
+    //Evita que a próxima pergunta gerada seja igual a anterior
+    while (self.random == self.lastRandom){
+        self.random = arc4random_uniform(21);
+    }
+    
     
     switch (self.random)
     {
@@ -300,7 +329,7 @@ Arquivo principal (.m) do jogo EcoQuiz
             [self.button_A setTitle:@"Teas and plants in general" forState:UIControlStateNormal];//Correta
             [self.button_B setTitle:@"Produced with technology that is less aggressive to the environment" forState:UIControlStateNormal];
             [self.button_C setTitle:@"Light products" forState:UIControlStateNormal];
-            [self.button_D setTitle:@"energy that is harmful to the environment" forState:UIControlStateNormal];
+            [self.button_D setTitle:@"Energy that is harmful to the environment" forState:UIControlStateNormal];
             break;
         }
         case 14:{
@@ -365,10 +394,26 @@ Arquivo principal (.m) do jogo EcoQuiz
 //Método viewDidLoad
 // É executado quando a tela é carregada.
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    
     
     self.soundIsOn = true;
+    
+    [_soundbutton setImage:[UIImage imageNamed:@"sound-on"]forState:UIControlStateNormal] ;
+    
+    [super viewDidLoad];
+    
+    self.lastRandom = -1;
+    
+    self.soundIsOn = true;
+    
+    
+    
+    soundFile = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"GameMusic" ofType:@"mp3"]];
+    sound = [[AVAudioPlayer alloc] initWithContentsOfURL:soundFile error:nil];
+    sound.delegate = self;
+    sound.numberOfLoops = -1;
+    [sound play];
+    
+    
     
     
     //Define a imagem de background
@@ -441,16 +486,17 @@ Arquivo principal (.m) do jogo EcoQuiz
         
         self.points = self.points + 100; // Aumenta em 100 a pontuação do jogador
         
-        if ([x  isEqual: @"A"]){
-            self.button_A.backgroundColor =[UIColor greenColor];
-        } else if ([x  isEqual: @"B"]){
-            self.button_B.backgroundColor =[UIColor greenColor];
-        } else if ([x isEqual: @"C"]){
-            self.button_C.backgroundColor =[UIColor greenColor];
-        } else if ([x isEqual: @"D"]){
-            self.button_D.backgroundColor =[UIColor greenColor];
-        }
         
+        if ([x  isEqual: @"A"]){
+            [self.button_A setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+        } else if ([x  isEqual: @"B"]){
+           [self.button_B setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+        } else if ([x isEqual: @"C"]){
+            [self.button_C setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+        } else if ([x isEqual: @"D"]){
+            [self.button_D setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+        }
+
         
         
     
@@ -460,25 +506,25 @@ Arquivo principal (.m) do jogo EcoQuiz
         
 
         if ([x  isEqual: @"A"]){
-            self.button_A.backgroundColor =[UIColor redColor];
+            [self.button_A setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
         } else if ([x  isEqual: @"B"]){
-            self.button_B.backgroundColor =[UIColor redColor];
+            [self.button_B setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
         } else if ([x isEqual: @"C"]){
-            self.button_C.backgroundColor =[UIColor redColor];
+            [self.button_C setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
         } else if ([x isEqual: @"D"]){
-            self.button_D.backgroundColor =[UIColor redColor];
+            [self.button_D setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
         }
         
         
         // Pinta de verde a alternativa correta
         if ([feedback[self.random]  isEqual: @"A"]){
-            self.button_A.backgroundColor =[UIColor greenColor];
+            [self.button_A setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
         } else if ([feedback[self.random]  isEqual: @"B"]){
-            self.button_B.backgroundColor =[UIColor greenColor];
+            [self.button_B setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
         } else if ([feedback[self.random] isEqual: @"C"]){
-            self.button_C.backgroundColor =[UIColor greenColor];
+            [self.button_C setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
         } else if ([feedback[self.random] isEqual: @"D"]){
-            self.button_D.backgroundColor =[UIColor greenColor];
+            [self.button_D setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
         }
         
         
@@ -503,13 +549,12 @@ Arquivo principal (.m) do jogo EcoQuiz
 - (IBAction)NextGame:(id)sender {
     
     // Remove as cores de fundo de todos os botões
-    self.button_A.backgroundColor =nil;
-    self.button_B.backgroundColor =nil;
-    self.button_C.backgroundColor =nil;
-    self.button_D.backgroundColor =nil;
-    
+    [self.button_A setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [self.button_B setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [self.button_C setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [self.button_D setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
  
-   [self SetQuestion];
+    [self SetQuestion];
     [self SetAnswers];
     
     // Desabilita e esconde o botão de próximo jogo,

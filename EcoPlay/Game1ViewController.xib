@@ -16,6 +16,8 @@
                 <outlet property="goback" destination="l3r-Qh-wZp" id="NRq-aE-mI0"/>
                 <outlet property="goback_image" destination="9jb-D6-Agi" id="6dl-8f-qfU"/>
                 <outlet property="question" destination="fTc-ka-SN0" id="UAt-mI-xwS"/>
+                <outlet property="soundButtonImage" destination="heU-bL-5lw" id="ivv-yg-tfs"/>
+                <outlet property="soundbutton" destination="qm2-7w-hZz" id="rs7-GX-IIX"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="yourPoints" destination="vBu-gW-0Lv" id="Hz0-JR-c6g"/>
             </connections>
@@ -66,7 +68,7 @@
                         <rect key="frame" x="273" y="201" width="254" height="35"/>
                     </variation>
                     <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                        <rect key="frame" x="336" y="239" width="353" height="81"/>
+                        <rect key="frame" x="8" y="247" width="1008" height="81"/>
                     </variation>
                     <connections>
                         <action selector="button_A:" destination="-1" eventType="touchUpInside" id="LV8-wM-F8j"/>
@@ -83,7 +85,7 @@
                         <rect key="frame" x="264" y="308" width="263" height="40"/>
                     </variation>
                     <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                        <rect key="frame" x="328" y="445" width="371" height="61"/>
+                        <rect key="frame" x="8" y="453" width="1008" height="61"/>
                     </variation>
                     <connections>
                         <action selector="button_C:" destination="-1" eventType="touchUpInside" id="SUe-M5-yw3"/>
@@ -100,7 +102,7 @@
                         <rect key="frame" x="257" y="253" width="286" height="41"/>
                     </variation>
                     <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                        <rect key="frame" x="326" y="348" width="373" height="65"/>
+                        <rect key="frame" x="8" y="359" width="1008" height="65"/>
                     </variation>
                     <connections>
                         <action selector="button_B:" destination="-1" eventType="touchUpInside" id="IgZ-h0-mJg"/>
@@ -120,14 +122,13 @@
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Points" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vBu-gW-0Lv">
                     <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="26"/>
-                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="33"/>
                     <nil key="highlightedColor"/>
                     <variation key="widthClass=regular" fixedFrame="YES">
                         <rect key="frame" x="43" y="131" width="146" height="21"/>
                     </variation>
                     <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                        <rect key="frame" x="51" y="239" width="304" height="57"/>
+                        <rect key="frame" x="76" y="680" width="367" height="57"/>
                     </variation>
                 </label>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="PERGUNTA" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fTc-ka-SN0">
@@ -139,21 +140,21 @@
                         <rect key="frame" x="223" y="67" width="354" height="109"/>
                     </variation>
                     <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                        <rect key="frame" x="225" y="25" width="574" height="206"/>
+                        <rect key="frame" x="145" y="37" width="736" height="230"/>
                     </variation>
                 </textView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axv-vq-Fz1">
                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="26"/>
+                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="33"/>
                     <state key="normal" title="Next question">
-                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <variation key="widthClass=regular" fixedFrame="YES">
                         <rect key="frame" x="655" y="127" width="222" height="30"/>
                     </variation>
                     <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                        <rect key="frame" x="765" y="233" width="220" height="45"/>
+                        <rect key="frame" x="689" y="686" width="269" height="45"/>
                     </variation>
                     <connections>
                         <action selector="NextGame:" destination="-1" eventType="touchUpInside" id="2u4-dt-GFm"/>
@@ -176,10 +177,28 @@
                         <rect key="frame" x="275" y="363" width="250" height="40"/>
                     </variation>
                     <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                        <rect key="frame" x="326" y="560" width="373" height="58"/>
+                        <rect key="frame" x="8" y="568" width="1008" height="58"/>
                     </variation>
                     <connections>
                         <action selector="button_D:" destination="-1" eventType="touchUpInside" id="yuj-sf-es1"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="heU-bL-5lw">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                        <rect key="frame" x="872" y="82" width="75" height="75"/>
+                    </variation>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qm2-7w-hZz">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <state key="normal" title="Button">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                        <rect key="frame" x="877" y="51" width="90" height="89"/>
+                    </variation>
+                    <connections>
+                        <action selector="soundButton:" destination="-1" eventType="touchUpInside" id="VYO-rS-fVU"/>
                     </connections>
                 </button>
             </subviews>
@@ -200,6 +219,8 @@
                     <exclude reference="axv-vq-Fz1"/>
                     <exclude reference="9jb-D6-Agi"/>
                     <exclude reference="lwb-kZ-hDN"/>
+                    <exclude reference="heU-bL-5lw"/>
+                    <exclude reference="qm2-7w-hZz"/>
                 </mask>
             </variation>
             <variation key="widthClass=regular">
@@ -221,6 +242,8 @@
                     <include reference="D27-vp-zeO"/>
                     <include reference="l3r-Qh-wZp"/>
                     <include reference="9jb-D6-Agi"/>
+                    <include reference="heU-bL-5lw"/>
+                    <include reference="qm2-7w-hZz"/>
                 </mask>
             </variation>
         </view>
